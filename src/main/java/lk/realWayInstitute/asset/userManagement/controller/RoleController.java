@@ -1,5 +1,4 @@
 package lk.realWayInstitute.asset.userManagement.controller;
-
 import lk.realWayInstitute.asset.userManagement.entity.Role;
 import lk.realWayInstitute.asset.userManagement.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
