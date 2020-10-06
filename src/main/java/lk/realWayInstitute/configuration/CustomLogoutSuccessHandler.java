@@ -1,6 +1,4 @@
 package lk.realWayInstitute.configuration;
-
-
 import lk.realWayInstitute.asset.userManagement.entity.Enum.UserSessionLogStatus;
 import lk.realWayInstitute.asset.userManagement.entity.User;
 import lk.realWayInstitute.asset.userManagement.entity.UserSessionLog;
