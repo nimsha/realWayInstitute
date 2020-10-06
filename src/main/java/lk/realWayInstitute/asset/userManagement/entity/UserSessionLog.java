@@ -1,5 +1,4 @@
 package lk.realWayInstitute.asset.userManagement.entity;
-
 import lk.realWayInstitute.asset.userManagement.entity.Enum.UserSessionLogStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
