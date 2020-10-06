@@ -1,11 +1,9 @@
 package lk.realWayInstitute;
-
 import lk.realWayInstitute.asset.commonAsset.model.Enum.BloodGroup;
 import lk.realWayInstitute.asset.commonAsset.model.Enum.CivilStatus;
 import lk.realWayInstitute.asset.commonAsset.model.Enum.Gender;
 import lk.realWayInstitute.asset.commonAsset.model.Enum.Title;
 import lk.realWayInstitute.asset.employee.entity.Employee;
-import lk.realWayInstitute.asset.employee.entity.Enum.Designation;
 import lk.realWayInstitute.asset.employee.entity.Enum.EmployeeStatus;
 import lk.realWayInstitute.asset.employee.service.EmployeeService;
 import lk.realWayInstitute.asset.userManagement.entity.Role;
@@ -54,7 +52,7 @@ public class ApplicationCreateRestController {
         employee.setTitle(Title.DR);
         employee.setGender(Gender.MALE);
         employee.setBloodGroup(BloodGroup.AP);
-        employee.setDesignation(Designation.ED);
+//        employee.setDesignation(Designation.ED);
         employee.setCivilStatus(CivilStatus.UNMARRIED);
         employee.setEmployeeStatus(EmployeeStatus.WORKING);
         employee.setDateOfBirth(LocalDate.now().minusYears(18));
