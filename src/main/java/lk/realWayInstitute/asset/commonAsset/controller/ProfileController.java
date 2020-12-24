@@ -1,5 +1,4 @@
 package lk.realWayInstitute.asset.commonAsset.controller;
-
 import lk.realWayInstitute.asset.userManagement.entity.PasswordChange;
 import lk.realWayInstitute.asset.userManagement.entity.User;
 import lk.realWayInstitute.asset.userManagement.service.UserService;

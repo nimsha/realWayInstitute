@@ -1,5 +1,6 @@
 package lk.realWayInstitute.asset.employee.entity;
 
+
 import lk.realWayInstitute.util.audit.AuditEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

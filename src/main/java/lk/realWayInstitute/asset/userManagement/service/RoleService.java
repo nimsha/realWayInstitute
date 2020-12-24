@@ -1,5 +1,6 @@
 package lk.realWayInstitute.asset.userManagement.service;
 
+
 import lk.realWayInstitute.asset.userManagement.dao.RoleDao;
 import lk.realWayInstitute.asset.userManagement.entity.Role;
 import lk.realWayInstitute.util.interfaces.AbstractService;
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Service
 @CacheConfig( cacheNames = {"role"} ) // tells Spring where to store cache for this class
-public class RoleService implements AbstractService<Role, Integer > {
+public class RoleService implements AbstractService< Role, Integer > {
     private final RoleDao roleDao;
 
     @Autowired

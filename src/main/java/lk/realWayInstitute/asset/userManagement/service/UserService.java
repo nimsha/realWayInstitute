@@ -1,5 +1,6 @@
 package lk.realWayInstitute.asset.userManagement.service;
 
+
 import lk.realWayInstitute.asset.employee.entity.Employee;
 import lk.realWayInstitute.asset.userManagement.dao.UserDao;
 import lk.realWayInstitute.asset.userManagement.entity.User;
@@ -16,7 +17,7 @@ import java.util.List;
 
 @Service
 @CacheConfig( cacheNames = {"user"} ) // tells Spring where to store cache for this class
-public class UserService implements AbstractService<User, Integer > {
+public class UserService implements AbstractService< User, Integer > {
     private final UserDao userDao;
     private final PasswordEncoder passwordEncoder;
 
