@@ -164,9 +164,9 @@
             <div class="col-sm-9">
                 <select id="subjectName" class="form-control" data-th-field="*{subjectName}">
                     <option value="">Select the Subject</option>
-                    <option data-th-each="subjects : ${subject}"
-                            data-th-selected="subjects==subject.name?'selected':'unselected'}"
-                            data-th-text="${subjects.subject}"
+                    <option data-th-each="subjects : ${course}"
+                            data-th-selected="subjects==course.name?'selected':'unselected'}"
+                            data-th-text="${subjects.course}"
                             data-th-value="${subjects}"></option>
                 </select>
             </div>

@@ -4,7 +4,7 @@ package lk.realWayInstitute.asset.batch.entity;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import lk.realWayInstitute.asset.hall.entity.Hall;
 import lk.realWayInstitute.asset.student.entity.Student;
-import lk.realWayInstitute.asset.subject.entity.Subject;
+import lk.realWayInstitute.asset.course.entity.Course;
 import lk.realWayInstitute.util.audit.AuditEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,7 +29,7 @@ public class Batch extends AuditEntity {
     private String teacherName;
 
     @ManyToOne
-    private Subject subject;
+    private Course course;
 
 //so many student on one batch
     @OneToMany(mappedBy = "batch")

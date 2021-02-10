@@ -1,4 +1,4 @@
-package lk.realWayInstitute.asset.subject.entity;
+package lk.realWayInstitute.asset.course.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonFilter;
@@ -22,20 +22,20 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonFilter( "Subject" )
-public class Subject extends AuditEntity {
+@JsonFilter( "Course" )
+public class Course extends AuditEntity {
 
     private String code;
 
     private String name;
 
-    @OneToMany(mappedBy = "subject")
+    @OneToMany(mappedBy = "course")
     private List< Batch > batches;
 
-    @ManyToMany(mappedBy = "subjects")
+    @ManyToMany(mappedBy = "courses")
     private List< Student > students;
 
-    @OneToMany(mappedBy = "subject")
+    @OneToMany(mappedBy = "course")
     private List< Teacher > teachers;
 
 

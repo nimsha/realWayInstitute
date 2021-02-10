@@ -17,7 +17,7 @@
 <!--          <h1><span class="navbar-text">Subject Management</span></h1>-->
 <!--        </div>-->
 <!--        <div class="col-4">-->
-<!--            <a href="/subject/new">-->
+<!--            <a href="/course/new">-->
 <!--                <button class="btn btn-primary">New Subject</button>-->
 <!--            </a>-->
 <!--        </div>-->
@@ -37,14 +37,14 @@
 <!--            </tr>-->
 <!--            </thead>-->
 <!--            <tbody>-->
-<!--            <tr data-th-each="subject, index : ${subjects}">-->
+<!--            <tr data-th-each="course, index : ${subjects}">-->
 <!--                <td data-th-text="${index.count}"></td>-->
-<!--                <td data-th-text="${subject.name}"></td>-->
-<!--                <td data-th-text="${subject.code}"></td>-->
+<!--                <td data-th-text="${course.name}"></td>-->
+<!--                <td data-th-text="${course.code}"></td>-->
 <!--                <td>-->
-<!--                    <a data-th-href="${'/subject/view/'+ subject.id}"><button class="btn btn-info">View</button></a>-->
-<!--                    <a data-th-href="${'/subject/edit/'+ subject.id}"><button class="btn btn-success">Edit</button></a>-->
-<!--                    <a data-th-href="${'/subject/delete/'+ subject.id}"><button class="btn btn-danger">Delete</button></a>-->
+<!--                    <a data-th-href="${'/course/view/'+ course.id}"><button class="btn btn-info">View</button></a>-->
+<!--                    <a data-th-href="${'/course/edit/'+ course.id}"><button class="btn btn-success">Edit</button></a>-->
+<!--                    <a data-th-href="${'/course/delete/'+ course.id}"><button class="btn btn-danger">Delete</button></a>-->
 <!--                </td>-->
 <!--            </tr>-->
 <!--            </tbody>-->
@@ -70,14 +70,14 @@
 <!--            </tr>-->
 <!--            </thead>-->
 <!--            <tbody>-->
-<!--            <tr data-th-each="subject, index : ${subjects}">-->
+<!--            <tr data-th-each="course, index : ${subjects}">-->
 <!--                <td data-th-text="${index.count}"></td>-->
-<!--                <td data-th-text="${subject.name}"></td>-->
-<!--                <td data-th-text="${subject.code}"></td>-->
+<!--                <td data-th-text="${course.name}"></td>-->
+<!--                <td data-th-text="${course.code}"></td>-->
 <!--                <td>-->
-<!--                    <a data-th-href="${'/subject/view/'+ subject.id}"><button class="btn btn-info">View</button></a>-->
-<!--                    <a data-th-href="${'/subject/edit/'+ subject.id}"><button class="btn btn-success">Edit</button></a>-->
-<!--                    <a data-th-href="${'/subject/delete/'+ subject.id}"><button class="btn btn-danger">Delete</button></a>-->
+<!--                    <a data-th-href="${'/course/view/'+ course.id}"><button class="btn btn-info">View</button></a>-->
+<!--                    <a data-th-href="${'/course/edit/'+ course.id}"><button class="btn btn-success">Edit</button></a>-->
+<!--                    <a data-th-href="${'/course/delete/'+ course.id}"><button class="btn btn-danger">Delete</button></a>-->
 <!--                </td>-->
 <!--            </tr>-->
 <!--            </tbody>-->
@@ -113,7 +113,7 @@
     <div class="col-4">
         <h1>Subject Management</h1>
     </div>
-    <div class="col-4"> <a href="/subject/new">
+    <div class="col-4"> <a href="/course/new">
         <button class="btn btn-primary">Add a Subject</button>
     </a></div>
 </div>
@@ -131,14 +131,14 @@
             </tr>
             </thead>
             <tbody>
-            <tr data-th-each="subject, index : ${subjects}">
+            <tr data-th-each="course, index : ${subjects}">
                 <td data-th-text="${index.count}"></td>
-                <td data-th-text="${subject.name}"></td>
-                <td data-th-text="${subject.code}"></td>
+                <td data-th-text="${course.name}"></td>
+                <td data-th-text="${course.code}"></td>
                 <td>
-                    <a data-th-href="${'/subject/view/'+ subject.id}"><button class="btn btn-info">View</button></a>
-                    <a data-th-href="${'/subject/edit/'+ subject.id}"><button class="btn btn-success">Edit</button></a>
-                    <a data-th-href="${'/subject/delete/'+ subject.id}"><button class="btn btn-danger">Delete</button></a>
+                    <a data-th-href="${'/course/view/'+ course.id}"><button class="btn btn-info">View</button></a>
+                    <a data-th-href="${'/course/edit/'+ course.id}"><button class="btn btn-success">Edit</button></a>
+                    <a data-th-href="${'/course/delete/'+ course.id}"><button class="btn btn-danger">Delete</button></a>
                 </td>
             </tr>
             </tbody>

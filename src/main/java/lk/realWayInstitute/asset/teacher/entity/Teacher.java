@@ -3,7 +3,7 @@ package lk.realWayInstitute.asset.teacher.entity;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import lk.realWayInstitute.asset.batch.entity.Batch;
 import lk.realWayInstitute.asset.commonAsset.model.Enum.Gender;
-import lk.realWayInstitute.asset.subject.entity.Subject;
+import lk.realWayInstitute.asset.course.entity.Course;
 import lk.realWayInstitute.util.audit.AuditEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -55,7 +55,7 @@ public class Teacher extends AuditEntity {
     private Batch batch;
 
    @ManyToOne
-    private Subject subject;
+    private Course course;
 
 
 

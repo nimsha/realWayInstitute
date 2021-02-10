@@ -1,7 +1,7 @@
 package lk.realWayInstitute.asset.teacher.controller;
 import lk.realWayInstitute.asset.batch.service.BatchService;
 import lk.realWayInstitute.asset.commonAsset.model.Enum.Gender;
-import lk.realWayInstitute.asset.subject.service.SubjectService;
+import lk.realWayInstitute.asset.course.service.CourseService;
 import lk.realWayInstitute.asset.teacher.entity.Teacher;
 import lk.realWayInstitute.asset.teacher.service.TeacherService;
 import lk.realWayInstitute.util.interfaces.AbstractController;
@@ -18,14 +18,14 @@ import javax.validation.Valid;
 @RequestMapping("/teacher")
 public class TeacherController implements AbstractController< Teacher, Integer> {
     private final TeacherService teacherService;
-    private final SubjectService subjectService;
+    private final CourseService courseService;
     private final BatchService batchService;
     private final MakeAutoGenerateNumberService makeAutoGenerateNumberService;
 
 
-    public TeacherController(TeacherService teacherService, SubjectService subjectService, BatchService batchService,MakeAutoGenerateNumberService makeAutoGenerateNumberService) {
+    public TeacherController(TeacherService teacherService, CourseService courseService, BatchService batchService, MakeAutoGenerateNumberService makeAutoGenerateNumberService) {
         this.teacherService = teacherService;
-        this.subjectService = subjectService;
+        this.courseService = courseService;
         this.batchService = batchService;
         this.makeAutoGenerateNumberService = makeAutoGenerateNumberService;
     }
@@ -42,7 +42,7 @@ public class TeacherController implements AbstractController< Teacher, Integer> 
         model.addAttribute("gender", Gender.values());
         model.addAttribute("addStatus",true);
         model.addAttribute("batches",batchService.findAll());
-        model.addAttribute("subjects",subjectService.findAll());
+        model.addAttribute("subjects", courseService.findAll());
         return "teacher/addTeacher";
     }
 
@@ -58,7 +58,7 @@ public class TeacherController implements AbstractController< Teacher, Integer> 
         model.addAttribute("gender", Gender.values());
         model.addAttribute("addStatus",false);
         model.addAttribute("batches",batchService.findAll());
-        model.addAttribute("subjects",subjectService.findAll());
+        model.addAttribute("subjects", courseService.findAll());
         return "teacher/addTeacher";
     }
 
@@ -69,7 +69,7 @@ public class TeacherController implements AbstractController< Teacher, Integer> 
             model.addAttribute("gender", Gender.values());
             model.addAttribute("addStatus",true);
             model.addAttribute("batches",batchService.findAll());
-            model.addAttribute("subjects",subjectService.findAll());
+            model.addAttribute("subjects", courseService.findAll());
             return "teacher/addTeacher";
         }
 

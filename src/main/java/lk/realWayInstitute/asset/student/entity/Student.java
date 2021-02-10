@@ -4,7 +4,7 @@ package lk.realWayInstitute.asset.student.entity;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import lk.realWayInstitute.asset.batch.entity.Batch;
 import lk.realWayInstitute.asset.school.entity.School;
-import lk.realWayInstitute.asset.subject.entity.Subject;
+import lk.realWayInstitute.asset.course.entity.Course;
 import lk.realWayInstitute.util.audit.AuditEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -54,10 +54,10 @@ public class Student extends AuditEntity {
     private School school;
 
     @ManyToMany
-    @JoinTable( name = "student_subject",
+    @JoinTable( name = "student_course",
             joinColumns = @JoinColumn( name = "student_id" ),
-            inverseJoinColumns = @JoinColumn( name = "subject_id" ) )
-    private List< Subject > subjects;
+            inverseJoinColumns = @JoinColumn( name = "course_id" ) )
+    private List<Course> courses;
 
 
 }
